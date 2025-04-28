@@ -1,0 +1,18 @@
+
+validating the data quality:
+
+bad formatting:
+fixed area values to not include the sqft and removed the /mo from the price values
+also the links are just plain text not clickable, fixed by using hyperlink
+
+duplicates:
+there was no duplicates in the search results with the applied filters but just in case I
+added the urls(unique keys) to a set to avoid this
+
+missing data:
+[UNFIXED]tried a diffrent search (for sale, diffrernt price range,5+ bedrooms, same zipcode) only the addresses were missing
+
+___________________________________________________
+notes:
+*added a polite small wait (3 seconds) after page load to avoid overload or alert the server.
+* bathrooms field in the .csv is the sum of -full bathrooms- and -bathrooms- values from the html
